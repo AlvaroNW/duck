@@ -73,10 +73,16 @@ nav {
     padding: 1em;
     border: solid 1px blue;
     margin: 1em;
+    background-color: #A3BB98;
     
 }
 .nav-right a{
     text-decoration: none;
+    color: blue;
+}
+.nav-right ul li:hover{
+    background-color: #F0ECCF;
+    cursor: pointer;
 }
 ul {
     display: flex;
@@ -85,8 +91,7 @@ ul {
 #home{
     background-color: #F0ECCF;
     text-align: center;
-    padding: 6em ;
-
+    padding: 6em;
 }
 #home h1{
     padding-bottom: 1em;
@@ -102,15 +107,41 @@ ul {
     height: 7.3125em;
     text-align: center;
 }
+@keyframes duck{
+    form{
+        transform: translateY(-300px);
+
+    }
+    to{
+        transform: translateY(0);
+    }
+
+    
+}
+.duck img{
+    animation: duck 1s 1s 1 normal forwards;
+    transform: translateY(-900px);
+}
 .duck img{
     width: 18.765625em;
     height: 17.125em;
     padding-top: 3.0625em;
     padding-bottom: 5.5625em;
+    
 }
 .text button{
     height: 3.5em;
     width: 9.8125em;
+    background-color: #FBC252;
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+    border-color: blue;
+    transition: transform 0.3s;
+}
+.text button:hover{
+    background-color:#F0ECCF;
+    transform: scale(1.05);
 }
 #emergency{
     background-color: #FBC252;
@@ -128,6 +159,7 @@ ul {
     margin: 0 auto;
     padding-top: 1em;
     padding-bottom: 2em;
+    
 }
 .grid-item {
     border: solid;
@@ -136,7 +168,21 @@ ul {
     align-items: center;
     height: 150px;
     border: solid blue;
+    margin: 1em;
+    transition: transform 0.3s;
 }
+.grid-item:hover{
+    transform: scale(1.05);
+    background-color: #F0ECCF;
+}
+.grid-container a{ 
+    text-decoration: none;
+    color: blue;
+}
+.grid-container a:visited{
+    text-decoration: none;
+}
+
 form{
     display: flex;
     flex-direction: column;
