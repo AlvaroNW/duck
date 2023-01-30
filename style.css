@@ -1,0 +1,161 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Flex start */
+body{
+    font: 1em 'Roboto', sans-serif;
+    
+}
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: bold;
+    font-size: 2em;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFB100;
+}
+.nav-left {
+    display: flex;
+    align-items: center;
+    margin-left: 3.4375em;
+}
+.nav-right{
+    margin-right: 3.4375em;
+}
+.nav-right ul li {
+    padding: 1em;
+    border: solid 1px blue;
+    margin: 1em;
+    
+}
+.nav-right a{
+    text-decoration: none;
+}
+ul {
+    display: flex;
+    justify-content: space-between; 
+}
+#home{
+    background-color: #F0ECCF;
+    text-align: center;
+    padding: 6em ;
+
+}
+#home h1{
+    padding-bottom: 1em;
+}
+#duck {
+    display: flex;
+    background-color: #A3BB98;
+    justify-content: space-around;
+    align-items: center;
+}
+#duck .text{
+    width: 38.375em;
+    height: 7.3125em;
+    text-align: center;
+}
+.duck img{
+    width: 18.765625em;
+    height: 17.125em;
+    padding-top: 3.0625em;
+    padding-bottom: 5.5625em;
+}
+.text button{
+    height: 3.5em;
+    width: 9.8125em;
+}
+#emergency{
+    background-color: #FBC252;
+}
+#emergency h2{
+    text-align: center;
+    padding-top: 1.375em;
+    padding-bottom: 1em;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3px;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+.grid-item {
+    border: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    border: solid blue;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: auto;
+}
+footer {
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #F0ECCF;
+}
+footer input,
+    textarea, button {
+    margin: 1em;
+}
+
+footer img{
+    height: 4.25em ;
+    width: 4em ;
+}
